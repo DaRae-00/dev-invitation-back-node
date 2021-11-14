@@ -12,7 +12,7 @@ hooks:
     - location: scripts/npm-start
       runas: root
       timeout: 60
-    ValidateService:
+  ValidateService:
     - location: scripts/validate-server
       timeout: 30
-      runas: root  
+      runas: root
