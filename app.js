@@ -11,6 +11,12 @@ app.get('/', (req, res) => {
   });
 });
 
+app.get('/test', (req, res) => {
+  res.json({
+    success: 'test!!!',
+  });
+});
+
 app.listen(port, () => {
   console.log(`server is listening at localhost:${process.env.PORT}`);
 });
