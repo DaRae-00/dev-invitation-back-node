@@ -1,4 +1,10 @@
 #!/bin/bash
+echo '============================'
+echo 'Running install_dependencies'
+echo '============================'
+
+/usr/local/bin/pm2 kill
+sudo service mysqld start
+source /home/ubuntu/build/.bash_profile
 cd /home/ubuntu/build/
-ps -elf | grep "node app.js" | awk '{print $4}' | while read line; do kill $line;
 npm install

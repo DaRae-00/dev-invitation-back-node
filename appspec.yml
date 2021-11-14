@@ -5,10 +5,14 @@ files:
     destination: /home/ubuntu/build/
 hooks:
   AfterInstall:
-    - location: scripts/npm-install.sh
+    - location: scripts/npm-install
       runas: root
       timeout: 300
   ApplicationStart:
-    - location: scripts/npm-start.sh
+    - location: scripts/npm-start
       runas: root
       timeout: 60
+    ValidateService:
+    - location: scripts/validate-server
+      timeout: 30
+      runas: root  
