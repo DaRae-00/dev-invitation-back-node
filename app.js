@@ -17,7 +17,7 @@ app.get('/test', (req, res) => {
   });
 });
 
-app.get('/test2', (req, res) => {
+app.get('/test22', (req, res) => {
   res.json({
     success: 'test 222!!!',
   });
